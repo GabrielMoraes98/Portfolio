@@ -1,0 +1,84 @@
+body header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+body header .header-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 50%;
+}
+body header .header-left h1{
+    font-size: 5rem;
+}
+body header .header-left p{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+body header .header-left p .escrever-texto{
+  color: #254cbf;
+  font-weight: 600;
+}
+.noturno#body header .header-left p .escrever-texto{
+  color: #178fd9;
+}
+
+body header .header-right .header-image{
+    position: relative;
+    line-height: 0px;
+}
+body header .header-right .header-image::after {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 110%;
+    border: 2px solid blue;
+    position: absolute;
+    top: -1.5rem;
+    right: -3.5rem;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  body header .header-right .header-image .gabriel {
+    border-radius: 50%;
+  }
+  body header .header-right .header-image .background {
+    position: absolute;
+    right: -3rem;
+    z-index: -1;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    rotate: -30deg;
+  }
+  @media only screen and (max-width: 800px){
+    body header{
+      min-height: 80vh;
+      padding-top: 7rem;
+       flex-direction: column-reverse;
+       gap: 1rem;
+  }
+  body header .header-left{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+body header .header-left h1{
+  font-size: 4rem;
+}
+}
+@media only screen and (max-width: 416px){
+   body header .header-left h1{
+    font-size: 3rem;
+  }
+  body header .header-left p{
+    font-size: 1.8rem;
+}
+body header .header-right .header-image .gabriel{
+  width: 240px;
+}
+}

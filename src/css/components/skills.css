@@ -1,0 +1,40 @@
+.skills{
+    margin-top: 15rem;
+    scroll-margin-top: 22rem;
+  }
+  .skills h3{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  .skills .skills-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+  .skills .skills-content ul li{
+    background-color:#04326034;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:13rem;
+  }
+  .skills .skills-content ul li i {
+    font-size: 8rem;
+    transition: 0.2s;
+  }
+  .skills .skills-content ul li i:hover{
+    color: #254cbf;
+  }
+  .skills .skills-content ul li span{
+    color: #254cbf;
+    font-size: 2rem;
+  }
+  .noturno#body .skills .skills-content ul li i:hover{
+    color: #254cbf;
+  }
